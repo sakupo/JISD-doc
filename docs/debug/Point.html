@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":6,"i4":6,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":6,"i18":10,"i19":10,"i20":10};
+var data = {"i0":6,"i1":10,"i2":10,"i3":6,"i4":6,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":6,"i18":10,"i19":10};
 var tabs = {65535:["t0","\u3059\u3079\u3066\u306E\u30E1\u30BD\u30C3\u30C9"],2:["t2","\u30A4\u30F3\u30B9\u30BF\u30F3\u30B9\u30FB\u30E1\u30BD\u30C3\u30C9"],4:["t3","abstract\u30E1\u30BD\u30C3\u30C9"],8:["t4","concrete\u30E1\u30BD\u30C3\u30C9"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -157,12 +157,9 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">説明</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addDebugResult(java.lang.String,debug.DebugResult)">addDebugResult</a></span>&#8203;(java.lang.String&nbsp;varName,
-              <a href="DebugResult.html" title="debug内のクラス">DebugResult</a>&nbsp;dr)</code></th>
-<td class="colLast">
-<div class="block">Set DebugResult</div>
-</td>
+<td class="colFirst"><code>abstract void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(java.lang.String)">add</a></span>&#8203;(java.lang.String&nbsp;varName)</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -281,13 +278,6 @@ extends java.lang.Object</pre>
                      int&nbsp;number)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRequested(boolean)">setRequested</a></span>&#8203;(boolean&nbsp;isRequested)</code></th>
-<td class="colLast">
-<div class="block">already request to set Breakpoint?</div>
-</td>
-</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -335,21 +325,6 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getResults</h4>
 <pre class="methodSignature">public&nbsp;java.util.HashMap&lt;java.lang.String,&#8203;<a href="DebugResult.html" title="debug内のクラス">DebugResult</a>&gt;&nbsp;getResults()</pre>
-</li>
-</ul>
-<a id="addDebugResult(java.lang.String,debug.DebugResult)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>addDebugResult</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;addDebugResult&#8203;(java.lang.String&nbsp;varName,
-                           <a href="DebugResult.html" title="debug内のクラス">DebugResult</a>&nbsp;dr)</pre>
-<div class="block">Set DebugResult</div>
-<dl>
-<dt><span class="paramLabel">パラメータ:</span></dt>
-<dd><code>dr</code> - debugresult</dd>
-</dl>
 </li>
 </ul>
 <a id="clearDebugResults()">
@@ -407,6 +382,15 @@ extends java.lang.Object</pre>
 <h4>setMaxNoOfExpand</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;setMaxNoOfExpand&#8203;(java.lang.String&nbsp;varName,
                              int&nbsp;number)</pre>
+</li>
+</ul>
+<a id="add(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre class="methodSignature">public abstract&nbsp;void&nbsp;add&#8203;(java.lang.String&nbsp;varName)</pre>
 </li>
 </ul>
 <a id="remove(java.lang.String)">
@@ -517,20 +501,10 @@ extends java.lang.Object</pre>
 <a id="isRequested()">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>isRequested</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isRequested()</pre>
-<div class="block">already request to set Breakpoint?</div>
-</li>
-</ul>
-<a id="setRequested(boolean)">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>setRequested</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setRequested&#8203;(boolean&nbsp;isRequested)</pre>
 <div class="block">already request to set Breakpoint?</div>
 </li>
 </ul>

@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","\u3059\u3079\u3066\u306E\u30E1\u30BD\u30C3\u30C9"],2:["t2","\u30A4\u30F3\u30B9\u30BF\u30F3\u30B9\u30FB\u30E1\u30BD\u30C3\u30C9"],8:["t4","concrete\u30E1\u30BD\u30C3\u30C9"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -160,26 +160,31 @@ extends <a href="Point.html" title="debug内のクラス">Point</a></pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#disable()">disable</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(java.lang.String)">add</a></span>&#8203;(java.lang.String&nbsp;varName)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#enable()">enable</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#disable()">disable</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#remove(java.lang.String)">remove</a></span>&#8203;(java.lang.String&nbsp;varName)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#enable()">enable</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#remove(java.lang.String)">remove</a></span>&#8203;(java.lang.String&nbsp;varName)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMaxNoOfExpand(java.lang.String,int)">setMaxNoOfExpand</a></span>&#8203;(java.lang.String&nbsp;varName,
                 int&nbsp;number)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMaxRecordNoOfValue(java.lang.String,int)">setMaxRecordNoOfValue</a></span>&#8203;(java.lang.String&nbsp;varName,
                      int&nbsp;number)</code></th>
@@ -191,7 +196,7 @@ extends <a href="Point.html" title="debug内のクラス">Point</a></pre>
 <!--   -->
 </a>
 <h3>クラスから継承されたメソッド&nbsp;debug.<a href="Point.html" title="debug内のクラス">Point</a></h3>
-<code><a href="Point.html#addDebugResult(java.lang.String,debug.DebugResult)">addDebugResult</a>, <a href="Point.html#clear()">clear</a>, <a href="Point.html#clearDebugResults()">clearDebugResults</a>, <a href="Point.html#equals(java.lang.Object)">equals</a>, <a href="Point.html#getClassName()">getClassName</a>, <a href="Point.html#getLineNumber()">getLineNumber</a>, <a href="Point.html#getMaxExpands()">getMaxExpands</a>, <a href="Point.html#getMaxRecords()">getMaxRecords</a>, <a href="Point.html#getMethodName()">getMethodName</a>, <a href="Point.html#getResults()">getResults</a>, <a href="Point.html#getResults(java.lang.String)">getResults</a>, <a href="Point.html#getVarNames()">getVarNames</a>, <a href="Point.html#hashCode()">hashCode</a>, <a href="Point.html#isBreak()">isBreak</a>, <a href="Point.html#isRequested()">isRequested</a>, <a href="Point.html#setRequested(boolean)">setRequested</a></code></li>
+<code><a href="Point.html#clear()">clear</a>, <a href="Point.html#clearDebugResults()">clearDebugResults</a>, <a href="Point.html#equals(java.lang.Object)">equals</a>, <a href="Point.html#getClassName()">getClassName</a>, <a href="Point.html#getLineNumber()">getLineNumber</a>, <a href="Point.html#getMaxExpands()">getMaxExpands</a>, <a href="Point.html#getMaxRecords()">getMaxRecords</a>, <a href="Point.html#getMethodName()">getMethodName</a>, <a href="Point.html#getResults()">getResults</a>, <a href="Point.html#getResults(java.lang.String)">getResults</a>, <a href="Point.html#getVarNames()">getVarNames</a>, <a href="Point.html#hashCode()">hashCode</a>, <a href="Point.html#isBreak()">isBreak</a>, <a href="Point.html#isRequested()">isRequested</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -241,6 +246,19 @@ extends <a href="Point.html" title="debug内のクラス">Point</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">オーバーライド:</span></dt>
 <dd><code><a href="Point.html#setMaxNoOfExpand(java.lang.String,int)">setMaxNoOfExpand</a></code>&nbsp;クラス内&nbsp;<code><a href="Point.html" title="debug内のクラス">Point</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="add(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;add&#8203;(java.lang.String&nbsp;varName)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">定義:</span></dt>
+<dd><code><a href="Point.html#add(java.lang.String)">add</a></code>&nbsp;クラス内&nbsp;<code><a href="Point.html" title="debug内のクラス">Point</a></code></dd>
 </dl>
 </li>
 </ul>

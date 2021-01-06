@@ -143,6 +143,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Get value info children</div>
 </dd>
+<dt><span class="memberNameLink"><a href="jisd/debug/JDIManager.html#classes(java.lang.String)">classes(String)</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/JDIManager.html" title="jisd.debug内のクラス">JDIManager</a></dt>
+<dd>
+<div class="block">List currently known classes</div>
+</dd>
 <dt><a href="jisd/info/ClassInfo.html" title="jisd.info内のクラス"><span class="typeNameLink">ClassInfo</span></a> - <a href="jisd/info/package-summary.html">jisd.info</a>のクラス</dt>
 <dd>
 <div class="block">Class information.</div>
@@ -297,14 +301,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Create value info of array elements.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="jisd/debug/value/ObjectInfo.html#expand()">expand()</a></span> - クラス のメソッドjisd.debug.value.<a href="jisd/debug/value/ObjectInfo.html" title="jisd.debug.value内のクラス">ObjectInfo</a></dt>
-<dd>
-<div class="block">Create value info of fields</div>
-</dd>
 <dt><span class="memberNameLink"><a href="jisd/debug/value/ValueInfo.html#expand()">expand()</a></span> - クラス のメソッドjisd.debug.value.<a href="jisd/debug/value/ValueInfo.html" title="jisd.debug.value内のクラス">ValueInfo</a></dt>
 <dd>
 <div class="block">Create value info children</div>
 </dd>
+<dt><span class="memberNameLink"><a href="jisd/debug/value/ValueInfo.html#expand(java.lang.String)">expand(String)</a></span> - クラス のメソッドjisd.debug.value.<a href="jisd/debug/value/ValueInfo.html" title="jisd.debug.value内のクラス">ValueInfo</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a id="I:F">
 <!--   -->
@@ -322,6 +324,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="jisd/info/ClassInfo.html#fieldNames()">fieldNames()</a></span> - クラス のメソッドjisd.info.<a href="jisd/info/ClassInfo.html" title="jisd.info内のクラス">ClassInfo</a></dt>
 <dd>
 <div class="block">Get field names which belongs to this class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="jisd/debug/JDIManager.html#fields(java.lang.String)">fields(String)</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/JDIManager.html" title="jisd.debug内のクラス">JDIManager</a></dt>
+<dd>
+<div class="block">List a class's fields</div>
 </dd>
 <dt><span class="memberNameLink"><a href="jisd/debug/Debugger.html#finish()">finish()</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/Debugger.html" title="jisd.debug内のクラス">Debugger</a></dt>
 <dd>
@@ -353,7 +359,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Get the default max record number of values</div>
 </dd>
+<dt><span class="memberNameLink"><a href="jisd/debug/value/ValueInfo.html#getField(java.lang.String)">getField(String)</a></span> - クラス のメソッドjisd.debug.value.<a href="jisd/debug/value/ValueInfo.html" title="jisd.debug.value内のクラス">ValueInfo</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="jisd/debug/Debugger.html#getHost()">getHost()</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/Debugger.html" title="jisd.debug内のクラス">Debugger</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="jisd/debug/JDIManager.html#getJDI()">getJDI()</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/JDIManager.html" title="jisd.debug内のクラス">JDIManager</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="jisd/debug/value/ValueInfo.html#getJValue()">getJValue()</a></span> - クラス のメソッドjisd.debug.value.<a href="jisd/debug/value/ValueInfo.html" title="jisd.debug.value内のクラス">ValueInfo</a></dt>
 <dd>
@@ -401,6 +411,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dd>
 <dt><span class="memberNameLink"><a href="jisd/debug/Debugger.html#getPort()">getPort()</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/Debugger.html" title="jisd.debug内のクラス">Debugger</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="jisd/debug/ProbeJManager.html#getProbeJ()">getProbeJ()</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/ProbeJManager.html" title="jisd.debug内のクラス">ProbeJManager</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="jisd/debug/Debugger.html#getResults()">getResults()</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/Debugger.html" title="jisd.debug内のクラス">Debugger</a></dt>
 <dd>
 <div class="block">Get debug results.</div>
@@ -429,9 +441,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Fetch value info from ProbeJ.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="jisd/debug/value/ObjectInfo.html#getRT()">getRT()</a></span> - クラス のメソッドjisd.debug.value.<a href="jisd/debug/value/ObjectInfo.html" title="jisd.debug.value内のクラス">ObjectInfo</a></dt>
+<dt><span class="memberNameLink"><a href="jisd/debug/value/ValueInfo.html#getRt()">getRt()</a></span> - クラス のメソッドjisd.debug.value.<a href="jisd/debug/value/ValueInfo.html" title="jisd.debug.value内のクラス">ValueInfo</a></dt>
 <dd>
-<div class="block">Get ReferenceType</div>
+<div class="block">reference type</div>
 </dd>
 <dt><span class="memberNameLink"><a href="jisd/debug/value/ValueInfo.html#getStratum()">getStratum()</a></span> - クラス のメソッドjisd.debug.value.<a href="jisd/debug/value/ValueInfo.html" title="jisd.debug.value内のクラス">ValueInfo</a></dt>
 <dd>
@@ -449,6 +461,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="jisd/debug/Point.html#getVarNames()">getVarNames()</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/Point.html" title="jisd.debug内のクラス">Point</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="jisd/debug/Debugger.html#getVmManager()">getVmManager()</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/Debugger.html" title="jisd.debug内のクラス">Debugger</a></dt>
+<dd>
+<div class="block">VM manager</div>
+</dd>
 </dl>
 <a id="I:H">
 <!--   -->
@@ -473,6 +489,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Get implemented interface names.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="jisd/debug/value/ObjectInfo.html#invokeMethod(com.sun.jdi.ThreadReference,java.lang.String,java.lang.Object...)">invokeMethod(ThreadReference, String, Object...)</a></span> - クラス のメソッドjisd.debug.value.<a href="jisd/debug/value/ObjectInfo.html" title="jisd.debug.value内のクラス">ObjectInfo</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="jisd/debug/Point.html#isBreak()">isBreak()</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/Point.html" title="jisd.debug内のクラス">Point</a></dt>
 <dd>
 <div class="block">Break or not</div>
@@ -491,6 +509,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">J</h2>
 <dl>
+<dt><a href="jisd/debug/JDIManager.html" title="jisd.debug内のクラス"><span class="typeNameLink">JDIManager</span></a> - <a href="jisd/debug/package-summary.html">jisd.debug</a>のクラス</dt>
+<dd>
+<div class="block">Manages a target VM with JDI.</div>
+</dd>
 <dt><a href="jisd/analysis/package-summary.html">jisd.analysis</a> - パッケージ jisd.analysis</dt>
 <dd>
 <div class="block">Defines analyzers which generate static information by analyzing Java bytecodes.</div>
@@ -575,6 +597,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Get method names which belongs to this class.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="jisd/debug/JDIManager.html#methods(java.lang.String)">methods(String)</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/JDIManager.html" title="jisd.debug内のクラス">JDIManager</a></dt>
+<dd>
+<div class="block">List a class's methods</div>
+</dd>
 </dl>
 <a id="I:N">
 <!--   -->
@@ -635,6 +661,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="jisd/probej/ProbeJ.html#%3Cinit%3E(java.lang.String,int,jisd.probej.VirtualMachine)">ProbeJ(String, int, VirtualMachine)</a></span> - クラス のコンストラクタjisd.probej.<a href="jisd/probej/ProbeJ.html" title="jisd.probej内のクラス">ProbeJ</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="jisd/debug/ProbeJManager.html" title="jisd.debug内のクラス"><span class="typeNameLink">ProbeJManager</span></a> - <a href="jisd/debug/package-summary.html">jisd.debug</a>のクラス</dt>
+<dd>
+<div class="block">Manages a target VM with ProbeJ.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="jisd/debug/ProbeJManager.html#%3Cinit%3E(jisd.probej.ProbeJ)">ProbeJManager(ProbeJ)</a></span> - クラス のコンストラクタjisd.debug.<a href="jisd/debug/ProbeJManager.html" title="jisd.debug内のクラス">ProbeJManager</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="jisd/probej/ProbeJUndetectedException.html" title="jisd.probej内のクラス"><span class="typeNameLink">ProbeJUndetectedException</span></a> - <a href="jisd/probej/package-summary.html">jisd.probej</a>の例外</dt>
 <dd>
 <div class="block">Thrown to indicate a connection with ProbeJ went wrong.</div>
@@ -692,6 +724,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="jisd/debug/Debugger.html#run()">run()</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/Debugger.html" title="jisd.debug内のクラス">Debugger</a></dt>
 <dd>
 <div class="block">Start up the debugger.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="jisd/debug/JDIManager.html#run()">run()</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/JDIManager.html" title="jisd.debug内のクラス">JDIManager</a></dt>
+<dd>
+<div class="block">Run the debugger.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="jisd/debug/ProbeJManager.html#run()">run()</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/ProbeJManager.html" title="jisd.debug内のクラス">ProbeJManager</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="jisd/debug/VMManager.html#run()">run()</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/VMManager.html" title="jisd.debug内のクラス">VMManager</a></dt>
+<dd>
+<div class="block">Run the debugger.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="jisd/probej/ProbeJ.html#run()">run()</a></span> - クラス のメソッドjisd.probej.<a href="jisd/probej/ProbeJ.html" title="jisd.probej内のクラス">ProbeJ</a></dt>
 <dd>
@@ -807,6 +849,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">T</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="jisd/debug/Debugger.html#thread()">thread()</a></span> - クラス のメソッドjisd.debug.<a href="jisd/debug/Debugger.html" title="jisd.debug内のクラス">Debugger</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="jisd/debug/value/ValueInfo.html#toString()">toString()</a></span> - クラス のメソッドjisd.debug.value.<a href="jisd/debug/value/ValueInfo.html" title="jisd.debug.value内のクラス">ValueInfo</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -856,6 +900,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">Thrown to indicate a target VM is already started.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="jisd/debug/VMAlreadyStartedException.html#%3Cinit%3E(java.lang.String)">VMAlreadyStartedException(String)</a></span> - 例外 のコンストラクタjisd.debug.<a href="jisd/debug/VMAlreadyStartedException.html" title="jisd.debug内のクラス">VMAlreadyStartedException</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="jisd/debug/VMManager.html" title="jisd.debug内のクラス"><span class="typeNameLink">VMManager</span></a> - <a href="jisd/debug/package-summary.html">jisd.debug</a>のクラス</dt>
+<dd>
+<div class="block">Manage a target VM.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="jisd/debug/VMManager.html#%3Cinit%3E()">VMManager()</a></span> - クラス のコンストラクタjisd.debug.<a href="jisd/debug/VMManager.html" title="jisd.debug内のクラス">VMManager</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a id="I:W">

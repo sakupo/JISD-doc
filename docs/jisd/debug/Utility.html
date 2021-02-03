@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9};
+var data = {"i0":9,"i1":9,"i2":9};
 var tabs = {65535:["t0","\u3059\u3079\u3066\u306E\u30E1\u30BD\u30C3\u30C9"],1:["t1","static\u30E1\u30BD\u30C3\u30C9"],8:["t4","concrete\u30E1\u30BD\u30C3\u30C9"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -188,6 +188,13 @@ extends java.lang.Object</pre>
 <div class="block">Alias of System.out.println().</div>
 </td>
 </tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sleep(int)">sleep</a></span>&#8203;(int&nbsp;sleepTime)</code></th>
+<td class="colLast">
+<div class="block">Sleep main thread</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -250,11 +257,25 @@ extends java.lang.Object</pre>
 <a id="println(java.lang.Object)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>println</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;println&#8203;(java.lang.Object&nbsp;o)</pre>
 <div class="block">Alias of System.out.println().</div>
+</li>
+</ul>
+<a id="sleep(int)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>sleep</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;sleep&#8203;(int&nbsp;sleepTime)</pre>
+<div class="block">Sleep main thread</div>
+<dl>
+<dt><span class="paramLabel">パラメータ:</span></dt>
+<dd><code>sleepTime</code> - sleep time (milliseconds)</dd>
+</dl>
 </li>
 </ul>
 </li>

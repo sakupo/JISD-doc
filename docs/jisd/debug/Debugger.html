@@ -26,8 +26,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":9,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -88,13 +88,13 @@ loadScripts(document, 'script');</script>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -139,6 +139,31 @@ extends java.lang.Object</pre>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Field</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#defaultSleepTime">defaultSleepTime</a></span></code></th>
+<td class="colLast">
+<div class="block">Default sleep time when executes run()/cont()/restart()</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</section>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <section role="region">
 <ul class="blockList">
@@ -202,7 +227,7 @@ extends java.lang.Object</pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -253,147 +278,182 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cont()">cont</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Continue execution from breakpoint</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cont(int)">cont</a></span>&#8203;(int&nbsp;sleepTime)</code></th>
+<td class="colLast">
+<div class="block">Continue execution from breakpoint</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>java.util.HashMap&lt;java.lang.String,&#8203;<a href="DebugResult.html" title="class in jisd.debug">DebugResult</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#drs()">drs</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Get DebugResults at the current location (alias of getCurrentDebugResults())</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#exit()">exit</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Shutdown the debugger.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#finish()">finish</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Execute "step out"/"step return"</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#finish(int)">finish</a></span>&#8203;(int&nbsp;times)</code></th>
 <td class="colLast">
 <div class="block">Execute "step out"/"step return" multiple times</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>java.util.HashMap&lt;java.lang.String,&#8203;<a href="DebugResult.html" title="class in jisd.debug">DebugResult</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCurrentDebugResults()">getCurrentDebugResults</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Get DebugResults at the current location</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDefaultSleepTime()">getDefaultSleepTime</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Default sleep time when executes run()/cont()/restart()</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;<a href="../vis/IExporter.html" title="interface in jisd.vis">IExporter</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getExporters()">getExporters</a></span>()</code></th>
 <td class="colLast">
 <div class="block">observer(exporter)</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHost()">getHost</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMain()">getMain</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOptions()">getOptions</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.util.ArrayList&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPoints()">getPoints</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get observation points.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPort()">getPort</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>java.util.ArrayList&lt;<a href="DebugResult.html" title="class in jisd.debug">DebugResult</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getResults()">getResults</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get debug results.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>java.util.ArrayList&lt;<a href="DebugResult.html" title="class in jisd.debug">DebugResult</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getResults(java.lang.String)">getResults</a></span>&#8203;(java.lang.String&nbsp;varName)</code></th>
 <td class="colLast">
 <div class="block">Get debug results a variable name matches.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;java.lang.String&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSrcDir()">getSrcDir</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="VMManager.html" title="class in jisd.debug">VMManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVmManager()">getVmManager</a></span>()</code></th>
 <td class="colLast">
 <div class="block">VM manager</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#list()">list</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Print source code</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#list(java.lang.String)">list</a></span>&#8203;(java.lang.String&nbsp;srcDir)</code></th>
 <td class="colLast">
 <div class="block">Print source code</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i26" class="altColor">
+<td class="colFirst"><code><a href="Location.html" title="class in jisd.debug">Location</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#loc()">loc</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Return a current file location.</div>
+</td>
+</tr>
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#locals()">locals</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Print all local variables in current stack frame</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#next()">next</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Execute "step over"</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#next(int)">next</a></span>&#8203;(int&nbsp;times)</code></th>
 <td class="colLast">
 <div class="block">Execute "step over" multiple times</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notifyExporters(jisd.debug.value.ValueInfo)">notifyExporters</a></span>&#8203;(<a href="value/ValueInfo.html" title="class in jisd.debug.value">ValueInfo</a>&nbsp;valueInfo)</code></th>
 <td class="colLast">
 <div class="block">Notify all exporters to update debug data</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#quit()">quit</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Shutdown the debugger.(alias of exit())</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="Debugger.html" title="class in jisd.debug">Debugger</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#redef()">redef</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Redefine the debugger so that the parameters are the same.
+<div class="block">Redefine the debugger so that the parameters are the same (breakpoints <strong>NOT</strong> inherited).
   <br>
  Inherited parameters:
    
@@ -408,165 +468,179 @@ extends java.lang.Object</pre>
  </div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeExporter(jisd.vis.IExporter)">removeExporter</a></span>&#8203;(<a href="../vis/IExporter.html" title="interface in jisd.vis">IExporter</a>&nbsp;exporter)</code></th>
 <td class="colLast">
 <div class="block">Remove an exporter</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#reset()">reset</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Reset this debugger own (breakpoints <strong>NOT</strong> inherited).</div>
+</td>
+</tr>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#restart()">restart</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Restart the debugger at once.(equals to restart(0))</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i36" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#restart(int)">restart</a></span>&#8203;(int&nbsp;sleepTime)</code></th>
 <td class="colLast">
-<div class="block">Restart the debugger.</div>
+<div class="block">Restart the debugger (breakpoints inherited).</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#run()">run</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Start up the debugger.(equals to run(0))</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i38" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#run(int)">run</a></span>&#8203;(int&nbsp;sleepTime)</code></th>
 <td class="colLast">
 <div class="block">Start up the debugger.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i39" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDefaultSleepTime(int)">setDefaultSleepTime</a></span>&#8203;(int&nbsp;defaultSleepTime)</code></th>
+<td class="colLast">
+<div class="block">Default sleep time when executes run()/cont()/restart()</div>
+</td>
+</tr>
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setExporter(jisd.vis.IExporter)">setExporter</a></span>&#8203;(<a href="../vis/IExporter.html" title="interface in jisd.vis">IExporter</a>&nbsp;exporter)</code></th>
 <td class="colLast">
 <div class="block">Set an exporter</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHost(java.lang.String)">setHost</a></span>&#8203;(java.lang.String&nbsp;host)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setMain(java.lang.String)">setMain</a></span>&#8203;(java.lang.String&nbsp;main)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOptions(java.lang.String)">setOptions</a></span>&#8203;(java.lang.String&nbsp;options)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPort(int)">setPort</a></span>&#8203;(int&nbsp;port)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSrcDir(java.lang.String...)">setSrcDir</a></span>&#8203;(java.lang.String...&nbsp;paths)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i46" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#step()">step</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Execute "step in"/"step into"</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i47" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#step(int)">step</a></span>&#8203;(int&nbsp;times)</code></th>
 <td class="colLast">
 <div class="block">Execute "step in"/"step into" multiple times</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i48" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stepIn()">stepIn</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Execute "step in"/"step into" (alias of step())</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i49" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stepIn(int)">stepIn</a></span>&#8203;(int&nbsp;times)</code></th>
 <td class="colLast">
 <div class="block">Execute "step in"/"step into" multiple times (alias of step(times))</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i50" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stepInto()">stepInto</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Execute "step in"/"step into" (alias of step())</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i51" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stepInto(int)">stepInto</a></span>&#8203;(int&nbsp;times)</code></th>
 <td class="colLast">
 <div class="block">Execute "step in"/"step into" multiple times (alias of step(times))</div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i52" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stepOut()">stepOut</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Execute "step out"/"step return" (alias of finish())</div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i53" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stepOut(int)">stepOut</a></span>&#8203;(int&nbsp;times)</code></th>
 <td class="colLast">
 <div class="block">Execute "step out"/"step return" multiple times (alias of finish(times))</div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i54" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stepOver()">stepOver</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Execute "step over" (alias of next())</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i55" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stepOver(int)">stepOver</a></span>&#8203;(int&nbsp;times)</code></th>
 <td class="colLast">
 <div class="block">Execute "step over" multiple times (alias of next(times))</div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i56" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stepReturn()">stepReturn</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Execute "step out"/"step return" (alias of finish())</div>
 </td>
 </tr>
-<tr id="i50" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<tr id="i57" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stepReturn(int)">stepReturn</a></span>&#8203;(int&nbsp;times)</code></th>
 <td class="colLast">
 <div class="block">Execute "step out"/"step return" multiple times (alias of finish(times))</div>
 </td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stopAt(int)">stopAt</a></span>&#8203;(int&nbsp;lineNumber)</code></th>
 <td class="colLast">
 <div class="block">Set a breakpoint by a line number.</div>
 </td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stopAt(int,java.lang.String%5B%5D)">stopAt</a></span>&#8203;(int&nbsp;lineNumber,
       java.lang.String[]&nbsp;varNames)</code></th>
@@ -574,14 +648,14 @@ extends java.lang.Object</pre>
 <div class="block">Set a breakpoint by a line number.</div>
 </td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stopAt(java.lang.String)">stopAt</a></span>&#8203;(java.lang.String&nbsp;methodName)</code></th>
 <td class="colLast">
 <div class="block">Set a breakpoint by a method name.</div>
 </td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stopAt(java.lang.String,int)">stopAt</a></span>&#8203;(java.lang.String&nbsp;className,
       int&nbsp;lineNumber)</code></th>
@@ -589,7 +663,7 @@ extends java.lang.Object</pre>
 <div class="block">Set a breakpoint by a line number.</div>
 </td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stopAt(java.lang.String,int,java.lang.String%5B%5D)">stopAt</a></span>&#8203;(java.lang.String&nbsp;className,
       int&nbsp;lineNumber,
@@ -598,7 +672,7 @@ extends java.lang.Object</pre>
 <div class="block">Set a breakpoint by a line number.</div>
 </td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stopAt(java.lang.String,java.lang.String)">stopAt</a></span>&#8203;(java.lang.String&nbsp;className,
       java.lang.String&nbsp;methodName)</code></th>
@@ -606,7 +680,7 @@ extends java.lang.Object</pre>
 <div class="block">Set a breakpoint by a method name.</div>
 </td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stopAt(java.lang.String,java.lang.String%5B%5D)">stopAt</a></span>&#8203;(java.lang.String&nbsp;methodName,
       java.lang.String[]&nbsp;varNames)</code></th>
@@ -614,7 +688,7 @@ extends java.lang.Object</pre>
 <div class="block">Set a breakpoint by a method name.</div>
 </td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stopAt(java.lang.String,java.lang.String,java.lang.String%5B%5D)">stopAt</a></span>&#8203;(java.lang.String&nbsp;className,
       java.lang.String&nbsp;methodName,
@@ -623,19 +697,48 @@ extends java.lang.Object</pre>
 <div class="block">Set a breakpoint by a method name.</div>
 </td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code>com.sun.jdi.ThreadReference</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#thread()">thread</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i67" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#uri()">uri</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Return a string which represents the current file location by VSCode-like format.</div>
+</td>
+</tr>
+<tr id="i68" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#uri(int)">uri</a></span>&#8203;(int&nbsp;lineNumber)</code></th>
+<td class="colLast">
+<div class="block">Return current file location by VSCode-like format.</div>
+</td>
+</tr>
+<tr id="i69" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#uri(jisd.debug.Location,int)">uri</a></span>&#8203;(<a href="Location.html" title="class in jisd.debug">Location</a>&nbsp;loc,
+   int&nbsp;lineNumber)</code></th>
+<td class="colLast">
+<div class="block">Return a string which represents the current file location by VSCode-like format.</div>
+</td>
+</tr>
+<tr id="i70" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#vars()">vars</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Print all variables in current stack frame</div>
+</td>
+</tr>
+<tr id="i71" class="rowColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#watch(int)">watch</a></span>&#8203;(int&nbsp;lineNumber)</code></th>
 <td class="colLast">
 <div class="block">Set a watchpoint by a line number.</div>
 </td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i72" class="altColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#watch(int,java.lang.String%5B%5D)">watch</a></span>&#8203;(int&nbsp;lineNumber,
      java.lang.String[]&nbsp;varNames)</code></th>
@@ -643,14 +746,14 @@ extends java.lang.Object</pre>
 <div class="block">Set a watchpoint by a line number.</div>
 </td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i73" class="rowColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#watch(java.lang.String)">watch</a></span>&#8203;(java.lang.String&nbsp;methodName)</code></th>
 <td class="colLast">
 <div class="block">Set a watchpoint by a method name.</div>
 </td>
 </tr>
-<tr id="i63" class="rowColor">
+<tr id="i74" class="altColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#watch(java.lang.String,int)">watch</a></span>&#8203;(java.lang.String&nbsp;className,
      int&nbsp;lineNumber)</code></th>
@@ -658,7 +761,7 @@ extends java.lang.Object</pre>
 <div class="block">Set a watchpoint by a line number.</div>
 </td>
 </tr>
-<tr id="i64" class="altColor">
+<tr id="i75" class="rowColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#watch(java.lang.String,int,java.lang.String%5B%5D)">watch</a></span>&#8203;(java.lang.String&nbsp;className,
      int&nbsp;lineNumber,
@@ -667,7 +770,7 @@ extends java.lang.Object</pre>
 <div class="block">Set a watchpoint or <strong>a probepoint</strong> by a line number.</div>
 </td>
 </tr>
-<tr id="i65" class="rowColor">
+<tr id="i76" class="altColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#watch(java.lang.String,java.lang.String)">watch</a></span>&#8203;(java.lang.String&nbsp;className,
      java.lang.String&nbsp;methodName)</code></th>
@@ -675,7 +778,7 @@ extends java.lang.Object</pre>
 <div class="block">Set a watchpoint by a method name.</div>
 </td>
 </tr>
-<tr id="i66" class="altColor">
+<tr id="i77" class="rowColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#watch(java.lang.String,java.lang.String%5B%5D)">watch</a></span>&#8203;(java.lang.String&nbsp;methodName,
      java.lang.String[]&nbsp;varNames)</code></th>
@@ -683,7 +786,7 @@ extends java.lang.Object</pre>
 <div class="block">Set a watchpoint by a method name.</div>
 </td>
 </tr>
-<tr id="i67" class="rowColor">
+<tr id="i78" class="altColor">
 <td class="colFirst"><code>java.util.Optional&lt;<a href="Point.html" title="class in jisd.debug">Point</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#watch(java.lang.String,java.lang.String,java.lang.String%5B%5D)">watch</a></span>&#8203;(java.lang.String&nbsp;className,
      java.lang.String&nbsp;methodName,
@@ -692,7 +795,7 @@ extends java.lang.Object</pre>
 <div class="block">Set a watchpoint by a method name.</div>
 </td>
 </tr>
-<tr id="i68" class="altColor">
+<tr id="i79" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#where()">where</a></span>()</code></th>
 <td class="colLast">
@@ -716,6 +819,26 @@ extends java.lang.Object</pre>
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a id="defaultSleepTime">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>defaultSleepTime</h4>
+<pre>public static&nbsp;int defaultSleepTime</pre>
+<div class="block">Default sleep time when executes run()/cont()/restart()</div>
+</li>
+</ul>
+</li>
+</ul>
+</section>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <section role="region">
 <ul class="blockList">
@@ -1046,8 +1169,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>step</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;step()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;step()</pre>
 <div class="block">Execute "step in"/"step into"</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="step(int)">
@@ -1056,8 +1182,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>step</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;step&#8203;(int&nbsp;times)</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;step&#8203;(int&nbsp;times)</pre>
 <div class="block">Execute "step in"/"step into" multiple times</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="stepIn()">
@@ -1066,8 +1195,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>stepIn</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;stepIn()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;stepIn()</pre>
 <div class="block">Execute "step in"/"step into" (alias of step())</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="stepIn(int)">
@@ -1076,8 +1208,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>stepIn</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;stepIn&#8203;(int&nbsp;times)</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;stepIn&#8203;(int&nbsp;times)</pre>
 <div class="block">Execute "step in"/"step into" multiple times (alias of step(times))</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="stepInto()">
@@ -1086,8 +1221,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>stepInto</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;stepInto()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;stepInto()</pre>
 <div class="block">Execute "step in"/"step into" (alias of step())</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="stepInto(int)">
@@ -1096,8 +1234,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>stepInto</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;stepInto&#8203;(int&nbsp;times)</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;stepInto&#8203;(int&nbsp;times)</pre>
 <div class="block">Execute "step in"/"step into" multiple times (alias of step(times))</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="next()">
@@ -1106,8 +1247,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>next</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;next()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;next()</pre>
 <div class="block">Execute "step over"</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="next(int)">
@@ -1116,8 +1260,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>next</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;next&#8203;(int&nbsp;times)</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;next&#8203;(int&nbsp;times)</pre>
 <div class="block">Execute "step over" multiple times</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="stepOver()">
@@ -1126,8 +1273,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>stepOver</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;stepOver()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;stepOver()</pre>
 <div class="block">Execute "step over" (alias of next())</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="stepOver(int)">
@@ -1136,8 +1286,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>stepOver</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;stepOver&#8203;(int&nbsp;times)</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;stepOver&#8203;(int&nbsp;times)</pre>
 <div class="block">Execute "step over" multiple times (alias of next(times))</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="finish()">
@@ -1146,8 +1299,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>finish</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;finish()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;finish()</pre>
 <div class="block">Execute "step out"/"step return"</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="finish(int)">
@@ -1156,8 +1312,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>finish</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;finish&#8203;(int&nbsp;times)</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;finish&#8203;(int&nbsp;times)</pre>
 <div class="block">Execute "step out"/"step return" multiple times</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="stepOut()">
@@ -1166,8 +1325,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>stepOut</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;stepOut()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;stepOut()</pre>
 <div class="block">Execute "step out"/"step return" (alias of finish())</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="stepOut(int)">
@@ -1176,8 +1338,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>stepOut</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;stepOut&#8203;(int&nbsp;times)</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;stepOut&#8203;(int&nbsp;times)</pre>
 <div class="block">Execute "step out"/"step return" multiple times (alias of finish(times))</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="stepReturn()">
@@ -1186,8 +1351,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>stepReturn</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;stepReturn()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;stepReturn()</pre>
 <div class="block">Execute "step out"/"step return" (alias of finish())</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="stepReturn(int)">
@@ -1196,8 +1364,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>stepReturn</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;stepReturn&#8203;(int&nbsp;times)</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;stepReturn&#8203;(int&nbsp;times)</pre>
 <div class="block">Execute "step out"/"step return" multiple times (alias of finish(times))</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+</dl>
 </li>
 </ul>
 <a id="cont()">
@@ -1206,7 +1377,17 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>cont</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;cont()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;cont()</pre>
+<div class="block">Continue execution from breakpoint</div>
+</li>
+</ul>
+<a id="cont(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cont</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;cont&#8203;(int&nbsp;sleepTime)</pre>
 <div class="block">Continue execution from breakpoint</div>
 </li>
 </ul>
@@ -1216,7 +1397,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>list</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;list&#8203;(java.lang.String&nbsp;srcDir)</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;list&#8203;(java.lang.String&nbsp;srcDir)</pre>
 <div class="block">Print source code</div>
 </li>
 </ul>
@@ -1226,7 +1407,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>list</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;list()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;list()</pre>
 <div class="block">Print source code</div>
 </li>
 </ul>
@@ -1240,6 +1421,36 @@ extends java.lang.Object</pre>
 <div class="block">Print all local variables in current stack frame</div>
 </li>
 </ul>
+<a id="vars()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>vars</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;vars()</pre>
+<div class="block">Print all variables in current stack frame</div>
+</li>
+</ul>
+<a id="drs()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>drs</h4>
+<pre class="methodSignature">public&nbsp;java.util.HashMap&lt;java.lang.String,&#8203;<a href="DebugResult.html" title="class in jisd.debug">DebugResult</a>&gt;&nbsp;drs()</pre>
+<div class="block">Get DebugResults at the current location (alias of getCurrentDebugResults())</div>
+</li>
+</ul>
+<a id="getCurrentDebugResults()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCurrentDebugResults</h4>
+<pre class="methodSignature">public&nbsp;java.util.HashMap&lt;java.lang.String,&#8203;<a href="DebugResult.html" title="class in jisd.debug">DebugResult</a>&gt;&nbsp;getCurrentDebugResults()</pre>
+<div class="block">Get DebugResults at the current location</div>
+</li>
+</ul>
 <a id="where()">
 <!--   -->
 </a>
@@ -1248,6 +1459,47 @@ extends java.lang.Object</pre>
 <h4>where</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;where()</pre>
 <div class="block">Print stacktrace in current stack frame.</div>
+</li>
+</ul>
+<a id="loc()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>loc</h4>
+<pre class="methodSignature">public&nbsp;<a href="Location.html" title="class in jisd.debug">Location</a>&nbsp;loc()</pre>
+<div class="block">Return a current file location.</div>
+</li>
+</ul>
+<a id="uri()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>uri</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;uri()</pre>
+<div class="block">Return a string which represents the current file location by VSCode-like format.</div>
+</li>
+</ul>
+<a id="uri(jisd.debug.Location,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>uri</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;uri&#8203;(<a href="Location.html" title="class in jisd.debug">Location</a>&nbsp;loc,
+                            int&nbsp;lineNumber)</pre>
+<div class="block">Return a string which represents the current file location by VSCode-like format.</div>
+</li>
+</ul>
+<a id="uri(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>uri</h4>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;uri&#8203;(int&nbsp;lineNumber)</pre>
+<div class="block">Return current file location by VSCode-like format.</div>
 </li>
 </ul>
 <a id="clear(int)">
@@ -1302,7 +1554,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>run</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;run()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;run()</pre>
 <div class="block">Start up the debugger.(equals to run(0))</div>
 </li>
 </ul>
@@ -1312,7 +1564,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>run</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;run&#8203;(int&nbsp;sleepTime)</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;run&#8203;(int&nbsp;sleepTime)</pre>
 <div class="block">Start up the debugger.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1346,7 +1598,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>restart</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;restart()</pre>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;restart()</pre>
 <div class="block">Restart the debugger at once.(equals to restart(0))</div>
 </li>
 </ul>
@@ -1356,8 +1608,8 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>restart</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;restart&#8203;(int&nbsp;sleepTime)</pre>
-<div class="block">Restart the debugger.</div>
+<pre class="methodSignature">public&nbsp;java.lang.String&nbsp;restart&#8203;(int&nbsp;sleepTime)</pre>
+<div class="block">Restart the debugger (breakpoints inherited).</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>sleepTime</code> - Wait time after the debugger starts running</dd>
@@ -1371,7 +1623,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>redef</h4>
 <pre class="methodSignature">public&nbsp;<a href="Debugger.html" title="class in jisd.debug">Debugger</a>&nbsp;redef()</pre>
-<div class="block"><div>Redefine the debugger so that the parameters are the same.</div>
+<div class="block"><div>Redefine the debugger so that the parameters are the same (breakpoints <strong>NOT</strong> inherited).</div>
   <br>
  <div>Inherited parameters:
    <ul>
@@ -1384,6 +1636,16 @@ extends java.lang.Object</pre>
      <li> exporters </li>
    </ul>
  </div></div>
+</li>
+</ul>
+<a id="reset()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reset</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;reset()</pre>
+<div class="block">Reset this debugger own (breakpoints <strong>NOT</strong> inherited).</div>
 </li>
 </ul>
 <a id="clearResults()">
@@ -1447,6 +1709,26 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>thread</h4>
 <pre class="methodSignature">public&nbsp;com.sun.jdi.ThreadReference&nbsp;thread()</pre>
+</li>
+</ul>
+<a id="getDefaultSleepTime()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDefaultSleepTime</h4>
+<pre class="methodSignature">public static&nbsp;int&nbsp;getDefaultSleepTime()</pre>
+<div class="block">Default sleep time when executes run()/cont()/restart()</div>
+</li>
+</ul>
+<a id="setDefaultSleepTime(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDefaultSleepTime</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;setDefaultSleepTime&#8203;(int&nbsp;defaultSleepTime)</pre>
+<div class="block">Default sleep time when executes run()/cont()/restart()</div>
 </li>
 </ul>
 <a id="getMain()">
@@ -1593,13 +1875,13 @@ extends java.lang.Object</pre>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
